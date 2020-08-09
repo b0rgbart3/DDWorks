@@ -1,0 +1,122 @@
+.thumbnail {
+    display:inline-block;
+    vertical-align: top;
+    padding:8px;
+    margin-bottom:20px;
+    min-width:100px;
+    margin-right:10px;
+    min-height:200px;
+    box-sizing:border-box;
+    background-color:white;
+    border:2px solid white;
+    overflow: hidden;
+     border-radius:2px;
+     opacity:.85;
+     box-shadow:0 2px 8px rgba(100,10,10,.25);
+     user-select: none;
+     cursor: pointer;
+}
+
+.thumbnail:hover {
+    box-shadow:0 2px 8px rgba(100,10,10,.5);
+    opacity:1;
+}
+.thumbnail:active {
+    box-shadow:0 2px 8px rgba(100,10,10,1);
+}
+.thumbnail img {
+    width:200px;
+}
+
+.thumbnailGroup {
+    text-align:center;
+    /* border:1px dashed white;*/
+    background-color:rgba(255,255,255,.78); 
+    border-radius:8px;
+    padding-bottom:20px;
+    box-sizing: border-box;
+    padding-top:20px;
+
+}
+
+.modalLander {
+    position: absolute;
+    top:50px;
+    width:100%;
+}
+.modal {
+    width:90%;
+    min-height:900px;
+    background-color:rgba(255,255,255,1);
+    box-sizing: border-box;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:6px;
+    box-shadow:0 0 20px rgba(0,0,0,1);
+    padding-bottom:80px;
+}
+
+.closer {
+    float:right;
+    top:0;
+    right:0;
+    color:black;
+    user-select: none;
+    cursor:pointer;
+    background-image:url(../images/close.svg);
+    background-size:80% 80%;
+    background-repeat:none;
+    background-position:50% 50%;
+    width:80px;
+    height:80px;
+    opacity:.5;
+
+}
+
+.closer:hover {
+    opacity:.8;
+}
+
+.closer:active {
+    opacity:1;
+}
+
+.modalTitleBox {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    color:black;
+    text-align: left;
+}
+.modalTitle {
+    width:90%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size:2em;
+    margin-top:80px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.modalImageDiv {
+    margin-top:10px;
+    text-align: center;
+}
+
+.modalImage {
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.modalImage:active {
+    box-shadow:0 0 18px rgb(236, 156, 156);
+}
+.instructions {
+    font-style:italic;
+    font-weight: bold;
+    color:rgb(244, 61, 91);
+}

@@ -1,0 +1,366 @@
+<style>
+
+
+
+        .bigmuscle {
+            background:linear-gradient(to right, rgba(0,0,0,.75) 5%, rgba(0, 0, 0, 0) 35%, 
+                rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, .75) 90%), 
+              url(./projects/images//grit_seamless.png),
+                url(./projects/images/seamless_honeycomb.jpg);
+            background-repeat: repeat, repeat;
+            background-color:#000000;
+            height:900px;
+            color:white;
+            position: relative;
+            
+        }
+        
+        .phoneContainer {
+            width:100%;
+            left:0;
+            top:0;
+            perspective: 800px;
+            perspective-origin: 50% 400px;
+            position: relative;
+        
+        }
+        
+        .phone {
+            background-image:url('./projects/images/bm_background.jpg');
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            top:820px;
+            left:-600px;
+            width:600px;
+            height:1100px;
+            border-radius:100px;
+            overflow: hidden;
+            position:absolute;
+            box-shadow:-17px 22px 5px 0px rgba(0,0,0,.6);
+        
+        }
+        
+        
+        .bmmiddle1 {
+                position: absolute;
+            top:29%;
+            width:90%;
+            left:5%;
+            opacity: .01;
+        }
+        
+        .bmmiddle2 {
+                position: absolute;
+            top:29%;
+            width:90%;
+            left:5%;
+            opacity: .01;
+        }
+        
+        .bmmiddle3 {
+                position: absolute;
+            top:29%;
+            width:90%;
+            left:5%;
+            opacity: .01;
+        }
+        
+        .highlighter {
+            position: absolute;
+            top:120%;
+            width:100%;
+            left:0;
+            opacity:.25;
+            height:200px;
+        }
+        
+        
+        .position2 {
+            border:20px solid red;
+        }
+        
+        
+        
+        /* Styles for Starburst -- */
+        
+        .starburst {
+        background-color:#8e8e8e;
+        width:100%;
+        height:700px;
+        position: relative;
+        }
+        
+        .starburstFull1 {
+            position:absolute;
+            top:10px;
+            left:-150px;
+            width:300px;
+            height:600px;
+            z-index: 20;
+        }
+        
+        .starburstFull2 {
+            position:absolute;
+            top:10px;
+            left:20px;
+            width:300px;
+            height:600px;
+            z-index: 10;
+            opacity:0;
+        }
+        
+        .starburstFull3 {
+            position:absolute;
+            top:10px;
+            left:20px;
+            width:300px;
+            height:600px;
+            z-index: 1;
+            opacity:0;
+        }
+        
+        .phoneBase {
+            position:relative;
+            left:0;
+            top:0;
+            background-image: url(./projects/images/phone_base_plain.jpg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            width:300px;
+            height:584px;
+            background-size:100%;
+            border-radius: 44px;
+            z-index: 1;
+        }
+        
+        .phoneReflection {
+                position:absolute;
+            left:0px;
+            top:584px;
+            background-image: url(./projects/images/phone_reflection.png);
+            background-repeat: no-repeat;
+            width:300px;
+            background-size: 100%;
+            height:90px;
+            border-radius: 40px 40px 0 0;
+        }
+        
+        .phoneFace {
+            position:absolute;
+            left:8px;
+            top:10px;
+            width:284px;
+            height:570px;
+            background-color: black;
+            border-radius: 38px;
+            z-index: 2;
+            overflow: hidden;
+        }
+        
+        .phoneCamera {
+            position: absolute;
+            left:114px;
+            top:48px;
+            width:94px;
+            height:16px;
+            border-radius: 6px;
+            z-index: 3;
+            background-image: url(./projects/images/phone_camera.png);
+            background-size: 100%;
+        }
+        
+        .phoneButton {
+            position: absolute;
+            left:119px;
+            top:504px;
+            width:59px;
+            height:59px;
+            border-radius: 25%;
+            z-index: 3;
+            background-image: url(./projects/images/phone_button.png);
+            background-size: 100%;
+        }
+        
+        .phoneScreen {
+            position: absolute;
+            top:68px;
+            left:6px;
+            background-color: blue;
+            width:272px;
+            height:410px;
+            z-index: 4;
+            overflow: hidden;
+        }
+        
+        .phoneScreen img {
+            width: 100%;
+        
+        }
+        
+        .phoneHighlight {
+            opacity: .5;
+            width:300px;
+            height:800px;
+            position: absolute;
+            top:0;
+            left:-120px;
+            z-index: 5;
+            -ms-transform: rotate(-14deg); /* IE 9 */
+            -webkit-transform: rotate(-14deg); /* Chrome, Safari, Opera */
+            transform: rotate(-14deg);
+            background:linear-gradient(to bottom, rgba(255,255,255,.7) 5%, rgba(255, 255, 255, 0) 60%); 
+        }
+        
+        .sb1 {
+        position:absolute;
+        left:0;
+        top:0;
+            height: 100%;
+        }
+        .sb2 {
+        position:absolute;
+        left:0;
+        top:300px;
+        z-index:6;
+        opacity:0;
+            height: 100%;
+        }
+        .sb3 {
+        position:absolute;
+        left:0;
+        top:0px;
+        z-index:7;
+        opacity:0;
+            height: 100%;
+        }
+        .sb4 {
+        position:absolute;
+        left:0;
+        top:0px;
+        z-index:8;
+        opacity:0;
+            height: 100%;
+        }
+        .sb5 {
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 9;
+            opacity: 0;
+        }
+        .sb6 {
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 9;
+            opacity: 0;
+        }
+        
+        .sb6, .sb7, .sb8, .sb9, .sb10, .sb11, .sb12, .sb13, .sb14, .sb15 {
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 9;
+            opacity: 0;
+        }
+    .popInfo {
+        display:none;
+        position: absolute;
+        top:70px;
+        right:10px;
+        width:44%;
+        min-width:350px;
+        background-color:#eeeeee;
+        border-radius:8px;
+        padding:30px;
+        padding-top:40px;
+        box-shadow:0 0 8px rgba(0,0,0,.5);
+    }
+    .moreInfo {
+        display:inline-block;
+        width:70px;
+        height:50px;
+        background-color:#dddddd;
+        position: absolute;
+        top:100px;
+        right:-10px;
+        transition: all .25s;
+        border-radius:6px 0 0 6px;
+        padding-left:10px;
+        padding-top:14px;
+        opacity:.8
+    }
+    .moreInfo:hover {
+        background-color:white;
+        opacity:1;
+    }
+    .moreInfo img {
+        width:34px;
+        height:34px;
+    }
+
+    .moreInfo:active {
+        right:0px;
+    }
+
+        </style>
+        
+
+
+<div class='idBlock group'>
+        <div class='idTitle'>
+   &nbsp;&nbsp;client:<span class='idclient'>Dave Kendrick</span><br>
+    project:<span class='idproject'>BigMuscleTrainer.com</span></br>
+    </div>
+        <div class='outsideLink' data-link="https://www.BigMuscleTrainer.com">
+        </div>
+    </div>
+    
+        <div class="bigmuscle">
+            <div class='phoneContainer art'>
+                <div class='phone'>
+                     <img src='./projects/images/bm_middle1.jpg' class='bmmiddle1'>
+                    <img src='./projects/images/bm_middle2.jpg' class='bmmiddle2'>
+                    <img src='./projects/images/bm_middle3.jpg' class='bmmiddle3'>
+                    <img src='./projects/images/highlighter.gif' class='highlighter'>
+                </div>
+            </div> 
+        
+
+        
+        
+        
+        </div>
+<div class='moreInfo'><img src='./images/interface/add.svg'>
+</div>
+        
+        <div class='infoContainer group muscleInfo popInfo'>
+<div class='closer'>
+
+</div>
+                <h1>BigMuscleTrainer.com</h1>  
+                    
+                <p>Dave Kendrick is a personal trainer here in San Francisco. His clients are always on the go, so we designed his website for mobile platforms first and foremost. </p>
+                <h2>Features</h2><ul>
+                    <li>mobile-first design</li>
+                        <li>custom photography and typography</li>
+                        <li>homepage features 3 rotating main images, with corresponding taglines</li>
+                    <li>custom logo design</li>
+                <li>price packages and Paypal&reg; integration</li>
+                <li>demo training videos</li>
+                <li>customer testimonials</li>
+                <li>custom icon driven navigational menu</li>
+                </ul>    
+                
+                
+                   <h2>Technologies</h2>
+                   <ul><li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap&reg; for layout</li>
+                <li>custom javascript for the pulldown menu</li>
+                </ul>
+                
+                
+                <br clear='all'>
+                </div>
+                

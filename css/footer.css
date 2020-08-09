@@ -1,0 +1,129 @@
+
+.footer {
+    background-color:rgb(218, 218, 218);
+    width:100%;
+    box-sizing: border-box;
+    border-radius:8px 8px 0 0;
+    box-shadow:0 0 16px rgba(0,0,0,.5);
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1200px;
+    bottom:0;
+    margin-bottom:0;
+
+}
+.footerWrapper {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0;
+    bottom:0;
+    width:100%;
+    position: relative;
+}
+
+.footer h1 {
+    padding-top:14px;
+    padding-left:0px;
+    text-transform: uppercase;
+    margin-bottom:10px;
+    border-bottom:2px solid #999999;
+}
+
+.footer ul {
+    list-style: none;
+   
+    margin-left:0;
+}
+
+.footer ul li {
+    /* background-image:url(../images/interface/bullet2.svg);
+    background-repeat:no-repeat;
+    background-size:6px 6px;
+    background-position:3px 6px; */
+    padding-left:0px;
+    user-select: none;
+    cursor: pointer;
+opacity:.6;
+    line-height:1.45em;
+    margin-bottom:3px;
+}
+
+.footer ul li:hover {
+   /* color:white; /* #5fff2f; */
+   opacity:1;
+}
+
+.footer ul li:active {
+  
+}
+
+
+.footerMenu {
+    width:100%;
+    box-sizing:border-box;
+    float:left;
+    vertical-align: top;
+    padding-top:14px;
+    padding-left:5%;
+  
+
+}
+.footerMenu ul {
+    width:87%;
+   
+    float:left;
+    display:inline-block;
+}
+
+
+
+
+.connectionFrame {
+    box-sizing: border-box;
+    float:right;
+    vertical-align: top;
+    padding-bottom:100px;
+    text-align: center;
+    position: relative;
+    top:-100px;
+}
+.connection {
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border:4px solid #cccccc;
+    /* background-color:#cdedc3; */
+    background-color: hsla(106, 54%, 85%, 0.275);
+    background-color:rgb(230, 230, 230);
+    border-radius:8px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.25);
+    user-select: none;
+    cursor: pointer;
+    padding:20px;
+    color:#333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border:none;
+    color:#888888;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:1.3em;
+}
+
+.connection:hover {
+    background-color:white;
+    color:rgb(71, 10, 10);
+    border-color:white;
+}
+
+.connection:active {
+    background-color:#5fff2f;
+    color:black;
+    border-color:#5fff2f;
+
+}
+
+
+@media screen and (max-width:800px), only screen and (max-device-width: 640px)   {
+
+}

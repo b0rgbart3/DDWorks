@@ -1,0 +1,301 @@
+
+html {
+    background-color:rgb(252, 166, 180);
+    background-color:black;
+    /* scroll-behavior: smooth; */
+}
+body {
+
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    font-size:14px;
+    margin:0;
+}
+li {
+    text-align:center;
+}
+.bioContent {
+    text-align:center;
+    padding:10px;
+    padding-bottom:200px;
+    background-color:pink;
+    margin:0;
+    color:black;
+}
+.mainContent {
+    text-align:center;
+    padding:10px;
+    padding-bottom:200px;
+    background-color:pink;
+    margin:0;
+}
+.mainContent p {
+    font-size:1.2em;
+    line-height:2em;
+}
+
+.header {
+    background-color:black;
+    color:white;
+    border:1px solid rgba(0,0,0,0);
+    box-sizing:border-box;
+    text-align:center;
+    padding:0;
+    padding-top:0px;
+    margin:0;
+    border-bottom-color:pink;
+}
+.logo {
+    font-size:3em;
+    user-select: none;
+    cursor: pointer;
+}
+h1 {
+    padding:0;
+    margin:0;
+    font-size:3em;
+    user-select:none;
+    cursor:pointer;
+}
+
+.navigationBar {
+   
+    text-align:center;
+    user-select:none;
+    cursor:pointer;
+    background-color:#ff4455;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    box-sizing:border-box;
+    border:1px solid #ff4455;
+    min-height:80px;
+}
+.navigationBar ul {
+    display:none;
+    list-style:none;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.navigationBar ul li {
+    display:inline-block;
+    text-transform:uppercase;
+    padding:12px;   
+}
+.navigationBar ul li:hover {
+    background-color:#000000;
+   border-radius:8px;
+
+}
+
+#mobilMenu {
+    color:black;
+}
+.mobileMenu {
+    display:none;
+   box-sizing: border-box;
+    background-color:white;
+    padding-top:0;
+    padding-bottom:0;
+    border:4px solid rgb(250, 102, 127);
+    box-sizing: border-box;
+    box-shadow:0 2px 8px rgba(250,102,127,1);
+}
+.mobileMenu ul {
+    margin-top:0;
+    margin-bottom:0;
+    list-style: none;
+    padding-left:0;
+    padding-top:0;
+    padding-bottom:0;
+}
+.mobileMenu ul li {
+    margin-top:0;
+    margin-bottom:0;
+    line-height:2em;
+    font-size:1.8em;
+    user-select: none;
+    cursor: pointer;
+    color:black;
+    text-transform:uppercase;
+    padding-top:14px;
+    padding-bottom:14px;
+    
+}
+.mobileMenu ul li:hover {
+    background-color:black;
+    color:white;
+}
+.mobileMneu ul li:active {
+    background-color:black;
+}
+.titleBox {
+    border-top:1px solid pink;
+    background-color:white;
+    width:97%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:8px;
+    box-shadow: 0 8px 34px pink;
+    padding-left:10%;
+    padding-right:10%;
+    box-sizing: border-box;
+    padding-bottom:14px;
+    margin-bottom:24px;
+    margin-top:20px;
+    color:black;
+}
+.title {
+    font-size:1.8em;
+    font-weight:700;
+    margin:0;
+    padding:0;
+    line-height:1em;
+    margin-top:20px;
+    padding-bottom:8px;
+    padding-top:0px;
+    color:black;
+}
+.date {
+    margin:0;
+    font-size:1em;
+    color:rgba(0,0,0,.4);
+    margin:0;
+    padding:0;
+    margin-bottom:8px;
+}
+.media {
+    margin-bottom:18px;
+    font-weight: 700;
+
+    font-size:1.2em;
+}
+.description {
+    margin-bottom:18px;
+    font-style:italic;
+}
+
+.portimage {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:900px;
+    max-height:260px;
+}
+
+.socials {
+    text-align:center;
+    width:100%;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.social_icon {
+    width:80px;
+    margin-left:auto;
+    display:inline-block;
+    opacity:.35;
+}
+
+.social_icon:hover {
+    opacity:1;
+}
+
+.social_icon img {
+    width:80%;
+}
+
+.artwork {
+    border:2px solid pink;
+    border-radius:8px;
+    margin-bottom:24px;
+    background-color:white;
+    box-shadow:0 8px 18px rgb(253, 126, 126);
+}
+
+.soldDot {
+    background-color:red;
+    width:12px;
+    min-width:12px;
+    max-height:12px;
+    min-height:12px;
+    border-radius:50%;
+    border:2px solid red;
+    margin-right:6px;
+    display:inline-block;
+    margin-top:11px;
+    margin-bottom:8px;
+    position: relative;
+    top:4px;
+}
+
+
+.burger {
+	cursor: pointer;
+	width: 44px;
+	height:44px;
+	float:right;
+	margin-right:4%;
+    opacity:.8;
+    display:block;
+}
+.burger:hover {
+	opacity:1;
+}
+
+.bar1, .bar2, .bar3{
+	width:40px;
+	height:7px;
+	background-color:rgba(255,255,255,.8);
+	background-color:#fed0d0;
+	margin:9px 0;
+	border-radius:2px;
+	transition: .4s ease;
+}
+
+.change .bar1 {
+	transform: rotate(-45deg) translate(-10px, 12px) ;
+}
+.change .bar3 {
+	transform: rotate(45deg) translate(-10px, -12px);
+}
+.change .bar2 {
+	opacity:0;
+}
+
+.show {
+	display:block;
+}
+
+@media only screen and (min-width:800px) {
+
+    .navigationBar ul{
+        display:block;
+    }
+
+    .burger {
+        display:none;
+    }
+  
+
+  }
+
+  
+
+/*  ClearFix  -----------------------------------------------------------
+*/
+/*  The ClearFix by Tony Aslett and Nicholas Gallagher */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1; }
+
+.noselect {
+  user-select: none;
+  cursor: pointer; }

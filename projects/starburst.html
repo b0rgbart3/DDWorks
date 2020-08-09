@@ -1,0 +1,319 @@
+<style>
+
+
+
+/* Styles for Starburst -- */
+
+.starburst {
+width:64%;
+height:700px;
+position: relative;
+/* border:1px solid red; */
+box-sizing: border-box;
+float:left;
+overflow: hidden;
+
+display:inline-block;
+}
+
+.starburstFull1 {
+	position:relative;
+	top:10px;
+	left:-300px;
+	width:300px;
+	height:600px;
+    /* border:3px solid rgb(68, 0, 128); */
+    z-index: 10;
+}
+
+.starburstFull2 {
+	position:absolute;
+	top:10px;
+	left:20px;
+	width:300px;
+	height:600px;
+
+	opacity:0;
+}
+
+.starburstFull3 {
+	position:absolute;
+	top:10px;
+	left:20px;
+	width:300px;
+	height:600px;
+
+	opacity:0;
+}
+
+.phoneBase {
+	position: absolute;
+	left:0;
+	top:0;
+	background-image: url(projects/images/starburst/phone_base_plain.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width:300px;
+	height:584px;
+	background-size:100%;
+	border-radius: 44px;
+    /* border:3px dashed orange; */
+}
+
+.phoneReflection {
+	position:absolute;
+	left:0px;
+	top:584px;
+	background-image: url(projects/images/starburst/phone_reflection.png);
+	background-repeat: no-repeat;
+	width:300px;
+	background-size: 100%;
+	height:90px;
+	border-radius: 40px 40px 0 0;
+}
+
+.phoneFace {
+	position:absolute;
+	left:8px;
+	top:10px;
+	width:284px;
+	height:570px;
+	background-color: black;
+	border-radius: 38px;
+    /* border:2px solid cyan; */
+	overflow: hidden;
+}
+
+.phoneCamera {
+	position: absolute;
+	left:114px;
+	top:48px;
+	width:94px;
+	height:16px;
+	border-radius: 6px;
+	background-image: url(projects/images/starburst/phone_camera.png);
+	background-size: 100%;
+}
+
+.phoneButton {
+	position: absolute;
+	left:119px;
+	top:504px;
+	width:59px;
+	height:59px;
+	border-radius: 25%;
+	
+	background-image: url(projects/images/starburst/phone_button.png);
+	background-size: 100%;
+}
+
+.phoneScreen {
+	position: absolute;
+	top:68px;
+	left:6px;
+	background-color: black;
+	width:272px;
+	height:410px;
+	overflow: hidden;
+    /* border:1px solid yellow; */
+}
+
+.phoneScreen img {
+	width: 100%;
+
+}
+
+.phoneHighlight {
+	opacity: .5;
+	width:300px;
+	height:800px;
+	position: absolute;
+	top:0;
+	left:-120px;
+
+	-ms-transform: rotate(-14deg); /* IE 9 */
+    -webkit-transform: rotate(-14deg); /* Chrome, Safari, Opera */
+    transform: rotate(-14deg);
+    background:linear-gradient(to bottom, rgba(255,255,255,.7) 5%, rgba(255, 255, 255, 0) 60%); 
+}
+
+.sb1 {
+position:absolute;
+left:0;
+top:0;
+height: 100%;
+opacity:.2;
+
+}
+.sb2 {
+position:absolute !important;  /* so I can override the main .project img relative style*/
+left:0;
+top:0px;
+opacity:0;
+height:100%;
+
+}
+.sb3 {
+position:absolute !important;
+left:0;
+top:0px;
+opacity:0;
+	height: 100%;
+ 
+}
+.sb4 {
+position:absolute !important;
+left:0;
+top:0px;
+opacity:0;
+	height: 100%;
+  
+}
+.sb5 {
+	position: absolute !important;
+	left:0;
+	top:0;
+ 
+	opacity: 0;
+}
+.sb6 {
+	position: absolute !important;
+	left:0;
+	top:0;
+ 
+	opacity: 0;
+}
+
+.sb6, .sb7, .sb8, .sb9, .sb10, .sb11, .sb12, .sb13, .sb14, .sb15 {
+	position: absolute !important;
+	left:0;
+	top:0;
+    opacity:0;
+ 
+}
+@media only screen and (max-device-width : 640px)
+{
+    .starburst {
+        width:100%;
+        float:none;
+        clear:all;
+        display:block;
+    }
+}
+@media only screen and (max-width: 860px) 
+  {
+     .starburst { width:100%;
+      float:none;
+      clear:all;
+      display:block;
+     }
+  }
+
+</style>
+
+
+<div class='projectContainer'>
+<div class='idBlock group'>
+        <div class='idTitle'>
+&nbsp;&nbsp;client:<span class='idclient'>Starburst</span><br>
+project:<span class='idproject'>iPhone Game Design</span></br>
+    </div>
+
+    </div>
+
+
+<div class="starburst group art" >
+
+	<div class='starburstFull1 group'>
+		<div class='phoneBase'></div>
+		<div class='phoneFace'>
+			<div class='phoneScreen'>
+			<img src='projects/images/starburst/starburst1.jpg' class='sb1'> 
+			<img src='projects/images/starburst/starburst_start.jpg' class='sb2'>
+			<img src='projects/images/starburst/starburst_start2.jpg' class='sb3'>
+			<img src='projects/images/starburst/starburst_game_screen.jpg' class='sb4'>
+			<img src='projects/images/starburst/starburst_blue1.jpg' class='sb5'>
+			<img src='projects/images/starburst/starburst_blue2.jpg' class='sb6'>
+			<img src='projects/images/starburst/starburst_blue3.jpg' class='sb7'>
+			<img src='projects/images/starburst/starburst_blue4.jpg' class='sb8'>
+			<img src='projects/images/starburst/starburst_blue5.jpg' class='sb9'>
+			<img src='projects/images/starburst/starburst_blue6.jpg' class='sb10'>
+			<img src='projects/images/starburst/starburst_blue7.jpg' class='sb11'>
+			<img src='projects/images/starburst/starburst_blue8.jpg' class='sb12'>
+			<img src='projects/images/starburst/starburst_blue9.jpg' class='sb13'>
+			<img src='projects/images/starburst/starburst_blue10.jpg' class='sb14'>
+			<img src='projects/images/starburst/starburst_end.jpg' class='sb15'>
+		</div>
+			<div class='phoneHighlight'></div>
+		
+		</div>
+		<div class='phoneCamera'></div>
+		<div class='phoneButton'></div>
+		<div class='phoneReflection'></div>
+	</div>
+
+	<div class='starburstFull2 group'>
+		<div class='phoneBase'></div>
+		<div class='phoneFace'>
+			<div class='phoneScreen'>
+			<img src='projects/images/starburst/starburst_game_screen.jpg' class='sb4'>
+			<img src='projects/images/starburst/starburst_green.jpg' class='sb5'>
+			</div>
+			<div class='phoneHighlight'></div>
+		</div>
+		<div class='phoneCamera'></div>
+		<div class='phoneButton'></div>
+		<div class='phoneReflection'></div>
+	</div>
+
+	<div class='starburstFull3 group'>
+		<div class='phoneBase'></div>
+		<div class='phoneFace'>
+			<div class='phoneScreen'>
+			<img src='projects/images/starburst/starburst_game_screen.jpg' class='sb4'>
+			<img src='projects/images/starburst/starburst_purple.jpg' class='sb5'>
+			</div>
+			<div class='phoneHighlight'></div>
+		</div>
+		<div class='phoneCamera'></div>
+		<div class='phoneButton'></div>
+		<div class='phoneReflection'></div>
+	</div>
+
+
+    
+	<!-- <div class='infoBox'>
+		<p class='infoLabel'><span class="glyphicon glyphicon-stop"></span>&nbsp;project</p>
+		<p><a href='http://www.californiawitchcamp.org'>Starburst Game for iPhone &amp; iPad</a></p>
+		<p>Mobile game design &amp; development</p>
+		<p class='infoLabel'><span class="glyphicon glyphicon-stop"></span>&nbsp;technology</p>
+		<p>Objective C++ written in XCode on the Mac</p>
+
+	</div> -->
+</div>
+
+
+<div class='infoContainer group willowInfo'>
+
+    <h1>Starburst </h1>  
+     
+    <p>A fun simple visual interactive board game for the Apple iPhone<sup>&reg;</sup> and iPad<sup>&reg;</sup></p>
+    <h2>Features</h2><ul>
+    <li>simple gameplay</li>
+    <li>highscore tracking</li>
+    <li>option for changing the size of the board</li>
+    <li>slider for changing the color of the board</li>
+    <li>option for solving the puzzle</li></ul>    
+    <!-- <div class='more'></div>      -->
+ 
+    
+    
+       <h2>Technology</h2>
+       <ul><li>Written in Objective C++</li>
+        <li>Developed in XCode on the Mac</li>
+    </ul>
+      
+
+	</div>
+	
+</div>

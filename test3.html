@@ -1,0 +1,127 @@
+
+<style>
+
+.cardWrapper {
+  width:40%;
+  position:relative;
+  float:left;
+  margin-right:10px;
+  cursor:pointer;
+  -webkit-font-smoothing:antialiased;
+  border:4px solid purple;
+  height:700px;
+}
+
+.cardWrapper img {
+    width:100%;
+}
+
+.cardFace{
+  position:absolute;
+}
+
+.flipIcon {
+    position: relative;
+    width:120px;
+    height:120px;
+    opacity:0;
+    top:580px;
+    left:380px;
+}
+
+/*  ClearFix  */
+/*  The ClearFix by Tony Aslett and Nicholas Gallagher */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* IE6&7 */ }
+
+
+
+</style>
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,500,900" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src='js/external/jquery.visible.min.js'></script>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+            <script src='js/TweenLite.js'></script>
+            <script src='js/TimelineLite.js'></script>
+            <script src='js/TimelineMax.js'></script>
+            <script src='js/TweenMax.js'></script>
+    </head>
+    <body>
+        <div class='cardWrapper group'>
+            <div class='card'>
+               
+                <div class="cardFace front">
+                     <img src='projects/images/suzanne1_front.png'></div>
+                <div class="cardFace back">
+                        <img src='projects/images/suzanne1_back.png'>
+                </div>
+                <div class='flipIcon'>
+                    <img src='images/interface/flipIcon.svg'>
+                </div>
+            </div>
+        </div>
+<br clear='all'>
+        <div class='cardWrapper group'>
+                <div class='card'>
+                   
+                    <div class="cardFace front">
+                         <img src='projects/images/willow_card_front.jpg'></div>
+                    <div class="cardFace back">
+                            <img src='projects/images/willow_card_back.jpg'>
+                    </div>
+                    <div class='flipIcon'>
+                        <img src='images/interface/flipIcon.svg'>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
+
+<script>
+
+TweenLite.set(".cardWrapper", {perspective:800});
+TweenLite.set(".card", {transformStyle:"preserve-3d"});
+TweenLite.set(".back", {rotationY:-180});
+TweenLite.set([".back", ".front"], {backfaceVisibility:"hidden"});
+
+let flipped =false;
+
+$(".cardWrapper").hover(
+    function() {
+        TweenLite.to($(this).find(".flipIcon"), 1.2, {opacity:1, ease:Back.easeOut});
+        },
+    function() {
+        TweenLite.to($(this).find(".flipIcon"), 1.2, {opacity:0, ease:Back.easeOut});
+       }
+ );
+$(".cardWrapper").click(
+  function() {
+      console.log('clicked');
+     // flipped = !flipped;
+     flipped = !$(this).hasClass('flipped');
+      if (flipped) {
+          $(this).addClass('flipped');
+        TweenLite.to($(this).find(".card"), 1.2, {rotationY:180, ease:Back.easeOut});
+
+      }
+      else{
+        $(this).removeClass('flipped');
+        TweenLite.to($(this).find(".card"), 1.2, {rotationY:0, ease:Back.easeOut}); 
+        
+       
+      }
+}
+);
+
+</script>
