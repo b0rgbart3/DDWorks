@@ -355,11 +355,11 @@ input[type='text'].error {
     }
 </style>
     <!-- <img src='images/interface/ideas.svg' class='write_icon'> -->
-    <a name = 'contact'></a>
+    <!-- <a name = 'contact'></a>
 <form class='contactForm' method='post' action="index.php" enctype="multipart/form-data">
 <h1>Contact Dority Design Works:</h1>  
 <br>
-        <!-- <p>Have an idea?  &nbsp;Send me a message about it. &nbsp;We can build it.</p> -->
+   
     <div class='inputs'>
     <label name='firstname'>First Name</label>
     <input type='text' name='firstname' id='firstname' class='namefield'>
@@ -382,7 +382,7 @@ input[type='text'].error {
     <br clear='all'>
     <input type='submit' name='submit' value='send' id='send'>
 </div>
-</form>
+</form> -->
 
 <script>
 let checkValidity = function(email) {
