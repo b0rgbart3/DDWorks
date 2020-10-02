@@ -71,11 +71,13 @@ body {
 }
 
 .projectContainer {
-    background-color:rgb(238, 238, 238);
+    border-radius:10px;
+    overflow: hidden;
     margin-bottom:40px;
     box-shadow:0 0 16px rgba(0,0,0,.5);
     overflow: hidden;
     perspective: 800;
+    background-color:#eeeeee;
 }
 
 .projectImage {
@@ -166,6 +168,7 @@ body {
 
 .homeSlider {
     width:100%;
+    
 }
 
 .imageContainer {
@@ -208,6 +211,9 @@ body {
     padding:0;
     overflow: hidden;
     margin-bottom:-10px;
+    border-radius:10px;
+    overflow: hidden;
+    
 }
 
 .fullImageContainer img {
@@ -233,6 +239,7 @@ body {
     margin:0;
     user-select: none;
     position: relative;
+
 }
 
 

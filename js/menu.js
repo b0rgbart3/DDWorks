@@ -82,6 +82,7 @@ define(['jquery', 'pubsub'], function($, pubsub) {
 
 
             menu.on('click', 'li', function(event) {
+                console.log("Clickd on menu item.");
                 event.stopPropagation();
                 $this = $(this);
                 if ($this.data('number') >= 0) {
@@ -89,9 +90,22 @@ define(['jquery', 'pubsub'], function($, pubsub) {
                         id: this, name: $this.html(), number: $this.data('number')
                     }
                     var shorty = $this.data('shortname');
-                    //console.log(shorty);
+                    console.log("Short menu name: ", shorty);
+
+                    if (shorty !== "contact") {
                     history.pushState('', '', "?section=" + shorty);
                     pubsub.pub('choose-category', item);
+                    } else {
+                        const element = document.querySelector('#contactForm')
+                        const topPos = element.getBoundingClientRect().top + window.pageYOffset
+
+                        window.scrollTo({
+                        top: topPos, // scroll so that the element is at the top of the view
+                        behavior: 'smooth' // smooth scroll
+                        })
+                        menu.slideUp();
+                      
+                    }
                 } else {
                   //  console.log('go home');
                     burger.removeClass('burgerOpen');

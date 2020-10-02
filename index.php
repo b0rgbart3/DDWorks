@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/masthead.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/design.css">
+        <link rel="stylesheet" href="css/contact_style.css">
         <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:200,300,400,500,600,700,800" rel="stylesheet">
         <!-- <link rel="stylesheet" href="//brick.freetls.fastly.net/Aileron:100,200,300,400,600,700,800,900"> -->
@@ -34,11 +35,17 @@
 
 <style>
     .response {
-        width:90%;
+        width:60%;
         background-color:#ccffcc;
         padding:20px;
         border-radius:0px;
         text-align:center;
+        margin:auto;
+        border-radius:10px;
+        box-shadow:0 0 14px green;
+        margin-top:20px;
+        font-size:20px;
+        line-height:32px;
     }
     </style>
 <?php 
@@ -86,24 +93,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $error = "a valid email";
               $errorfield = "email";
           }
-          if (isset($_POST['lastname'])) {
-            $lastname = trim($_POST['lastname']);
+          if (isset($_POST['fullname'])) {
+            $lastname = trim($_POST['fullname']);
             if ($lastname=='') {
-                $error = "your lastname";
-                $errorfield = "lastname";
+                $error = "your fullname";
+                $errorfield = "fullname";
             }
-          } else {
-              $error = "your lastname";
-              $errorfield = "lastname";
-          }
-          if (isset($_POST['firstname'])) {
-             $firstname = trim($_POST['firstname']);
-           // echo "Your firstname: " . $firstname. "<br>";
-            if ($firstname == '') {
-                $error = "your firstname";
-                $errorfield = "firstname";
-            }
-            } 
+          } 
   
 
             if ($error == '') {
@@ -111,8 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $datareceived = true;
 
                 $data = [];
-                $data['firstname'] = $firstname;
-                $data['lastname'] = $lastname;
+                $data['fullname'] = $fullname;
                 $data['email'] = $email;
                 $data['message'] = $message;
                 
@@ -184,6 +179,9 @@ if ($datareceived) {
     </div>
 </div>
 
+
+
+
 <div class='footerWrapper'>
     <div class='footer group'>
 
@@ -204,170 +202,24 @@ if ($datareceived) {
         <!-- <div class='connectionFrame'>
     <div class='connection' data-number='8' data-shortname='contact'>contact</div>-->
 </div> 
+</div>
+
+
 
 <br clear='all'>
 <style>
-input[type='text'].error {
-    border:2px solid #5fff2f;
-}
-.contactForm {
-    width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    box-sizing: border-box;
-   /* background-color:#aaaaaa; */
-    max-width:1200px;
-    padding-left:20px;
-    margin-top:40px;
-    padding-top:20px;
-    padding-left:5%;
-    padding-bottom:150px;
-    background-color:rgba(0,0,0,.07);
-}
-    input[type='submit'] {
-        padding:20px;
-        background-color:#444444;
-        color:white;
-        font-weight:bold;
-        text-transform: uppercase;
-        margin-top:30px;
-        margin-bottom:10px;
-        padding-left:40px;
-        padding-right:40px;
-        border-radius:1px;
-        border:2px solid #888888;
-        position:relative;
-        outline:none;
-        box-shadow:1px 1px 4px rgba(0,0,0,.25);
-        cursor:pointer;
-        user-select: none;
-        font-size:1em;
-        border:none;
-    }
-    input[type='submit']:hover {
-        background-color:#5fff2f;
-        color:black;
-        outline:none;
-        border:none;
-    }
-    input[type='submit']:active {
-        background-color:#5fff2f;
-        color:black;
-        border-color:#5fff2f;
-        top:2px;
-        left:2px;
-        outline:none;
-        border:none;
-    }
-    input[type='text'] {
-        border:none;
-        border-radius:6px;
-        display:block;
-        width:90%;
-        box-sizing:border-box;
-        background-color:rgba(255,255,255,.4);
-        cursor: pointer;
-        /* box-shadow:0 0 19px rgba(0,0,0,.2); */
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size:1.7em;
-        padding:8px;
-        padding-bottom:4px;
-        color:black;
-        box-sizing: border-box;
-        
-    }
-    .namefield {
-        text-transform:capitalize;
-    }
-    input[type='text']:active, input[type='text']:focus  {
-        outline-color:#5fff2f;
-        background-color:white;
-    }
-    textarea.error {
-        border:2px solid #5fff2f;
-    }
-    textarea {
-        width:90%;
-        box-sizing:border-box;
-        border:none;
-        /* box-shadow:0 0 19px rgba(0,0,0,.2); */
-        border-radius:6px;
-        background-color:rgba(255,255,255,.4);
-        padding:12px;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size:1.4em;
-        color:black;
-        box-sizing: border-box;
 
-    }
-    textarea:active, textarea:focus {
-        outline-color:#5fff2f;
-        background-color:white;
-    }
-    label {
-        display:block;
-        margin-bottom:.4em;
-        text-transform:uppercase;
-        color:#777777;
-        margin-top:11px;
-        font-size:.9em;
-
-    }
-    img.write_icon {
-        box-shadow:none;
-        float:left;
-        display:inline-block;
-        width:30%;
-        max-width:180px;
-        box-sizing: border-box;
-        margin-left:5%;
-       padding:0;
-       vertical-align: top;
-    
-       margin-top:0;
-    }
-
-    .notify {
-        color:#555555;
-    }
-
-    .contactForm p {
-        line-height:2em;
-        padding-top:0;
-        margin-top:0;
-        font-style:italic;
-        font-weight:bold;
-    }
-
-    .inputFrame {
-        background-color:rgba(255,255,255,.3);
-        padding:35px;
-        border-radius:8px;
-        box-shadow:1px 1px 18px rgba(0,0,0,.4);
-        padding-top:40px;
-        
-    }
-    .inputs {
-        width:100%;
-        /* border-right:4px solid #aaaaaa; */
-        max-width:650px;
-       
-    }
 </style>
-    <!-- <img src='images/interface/ideas.svg' class='write_icon'> -->
-    <!-- <a name = 'contact'></a>
-<form class='contactForm' method='post' action="index.php" enctype="multipart/form-data">
+<!--    <img src='images/interface/ideas.svg' class='write_icon'> -->
+    <a name = 'contact'></a>
+
+<form id="contactForm" class='contactForm' method='post' action="index.php" enctype="multipart/form-data">
 <h1>Contact Dority Design Works:</h1>  
 <br>
    
     <div class='inputs'>
-    <label name='firstname'>First Name</label>
-    <input type='text' name='firstname' id='firstname' class='namefield'>
-    <p class='notify'></p>
-
-    <br clear='all'>
-    <label name='lastname'>Last Name</label>
-    <input type='text' name='lastname' id='lastname' class='namefield'>
+    <label name='fullname'>Full Name</label>
+    <input type='text' name='fullname' id='fullname' class='namefield'>
     <p class='notify'></p>
 
     <br clear='all'>
@@ -380,9 +232,12 @@ input[type='text'].error {
     <textarea name='message' id='message' cols='60' rows='6'></textarea>
     <p class='notify'></p>
     <br clear='all'>
+
+    <input type='text' name='not_human' id='human_test'>
+
     <input type='submit' name='submit' value='send' id='send'>
 </div>
-</form> -->
+</form>
 
 <script>
 let checkValidity = function(email) {
@@ -391,12 +246,10 @@ let checkValidity = function(email) {
 }
 
 
-$('#firstname').on('change', function() {
-    $('#firstname').removeClass('error');
+$('#fullname').on('change', function() {
+    $('#fullname').removeClass('error');
 });
-$('#lastname').on('change', function() {
-    $('#lastname').removeClass('error');
-});
+
 $('#email').on('change', function() {
     $('#email').removeClass('error');
 });
@@ -405,27 +258,20 @@ $('#message').on('change', function() {
 });
 $('#send').on('click', function(event) {
 
-    let firstName = $('#firstname').val();
-    let lastName = $('#lastname').val();
+    let fullname = $('#fullname').val();
     let email = $('#email').val();
     let message= $('#message').val();
 
-    let notice = $("#firstname").next('.notify');
-    if (!firstName) {
-        $('#firstname').addClass('error');
+    let notice = $("#fullname").next('.notify');
+    if (!fullname) {
+        $('#fullname').addClass('error');
         
-        notice.text("Please include your first name.");
+        notice.text("Please include your full name.");
     } else {
         notice.text("");
     }
     
-    notice = $("#lastname").next('.notify');
-    if (!lastName) {
-        $('#lastname').addClass('error');
-        notice.text("Please include your last name.");
-    } else {
-        notice.text("");
-    }
+   
     notice = $("#email").next('.notify');
     let validemail=false;
     if (!email) {
@@ -451,9 +297,16 @@ $('#send').on('click', function(event) {
     }
 
 
-    if( !firstName || !lastName || !email || !message || !validemail) {
+    if( !fullname || !email || !message || !validemail) {
         event.preventDefault();
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        //document.body.scrollTop = document.documentElement.scrollTop = 0;
+        const element = document.querySelector('#contactForm')
+                        const topPos = element.getBoundingClientRect().top + window.pageYOffset
+
+                        window.scrollTo({
+                        top: topPos, // scroll so that the element is at the top of the view
+                        behavior: 'smooth' // smooth scroll
+                        })
     }
 
 });
@@ -461,7 +314,7 @@ $('#send').on('click', function(event) {
 </script>
 
 
-</div>
+
 </div></div></body>
    </html>
 
@@ -484,10 +337,9 @@ $message .= "<div style='color:#000000;padding:10px;border:1px solid #eeeeee;'>"
 $message .=  "<h1>A Message from the Contact Form of DDWorks</h1>";
 $labelIndex = 0;
 
-$message .= "<p>Firstname: ".$data['firstname']."</p>";
-$message .= "<p>Lastname: ".$data['lastname']."</p>";
+$message .= "<p>Full Name: ".$data['fullname']."</p>";
 $message .= "<p>Email: ".$data['email']."</p>";
-$message .= "<p>Message: ".$data['msg']."</p>";
+$message .= "<p>Message: ".$data['message']."</p>";
 
 $message .= "</div><br>End of contact form message.<br></body></html>";
 
@@ -506,4 +358,3 @@ mail($to,$subject,$message,$headers);
 
 
 ?>
-
