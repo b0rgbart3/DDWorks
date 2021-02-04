@@ -1,0 +1,22 @@
+{
+  "name": "ddworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "axis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b0rgbart3/ddworks.git"
+  },
+  "author": "Bart Dority",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b0rgbart3/ddworks/issues"
+  },
+  "homepage": "https://github.com/b0rgbart3/ddworks#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
