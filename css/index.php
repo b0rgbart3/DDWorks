@@ -36,8 +36,8 @@
 
 
 
-$firstname = '';
-$lastname = '';
+$fullname = '';
+
 $email = '';
 $msg = '';
 $error = '';
@@ -73,34 +73,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $error = "a valid email";
               $errorfield = "email";
           }
-          if (isset($_POST['lastname'])) {
-            $lastname = trim($_POST['lastname']);
+          if (isset($_POST['fullname'])) {
+            $fullname = trim($_POST['fullname']);
             if ($lastname=='') {
-                $error = "your lastname";
-                $errorfield = "lastname";
+                $error = "your fullname";
+                $errorfield = "fullname";
             }
           } else {
-              $error = "your lastname";
-              $errorfield = "lastname";
+              $error = "your fullname";
+              $errorfield = "fullname";
           }
-          if (isset($_POST['firstname'])) {
-            $firstname = trim($_POST['firstname']);
-            if ($firstname == '') {
-                $error = "your firstname";
-                $errorfield = "firstname";
-            }
-            } else {
-                $error = "your firstname";
-                $errorfield = "firstname";
-            }
-  
+         
 
             if ($error == '') {
                 $datareceived = true;
 
                 $data = [];
-                $data['firstname'] = $firstname;
-                $data['lastname'] = $lastname;
+                $data['fullname'] = $fullname;
                 $data['email'] = $email;
                 $data['msg'] = $msg;
                 
@@ -203,8 +192,7 @@ $message .= "<div style='color:#000000;padding:10px;border:1px solid #eeeeee;'>"
 $message .=  "<h1>A Message from the Contact Form of DDWorks</h1>";
 $labelIndex = 0;
 
-$message .= "<p>Firstname: ".$data['firstname']."</p>";
-$message .= "<p>Lastname: ".$data['lastname']."</p>";
+$message .= "<p>Fullname: ".$data['fullname']."</p>";
 $message .= "<p>Email: ".$data['email']."</p>";
 $message .= "<p>Message: ".$data['msg']."</p>";
 

@@ -1,0 +1,41 @@
+
+
+
+.lightPage {
+  
+    background-color:#eeeeee;
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    border-radius:8px;
+    box-sizing: border-box;
+    margin-top:50px;
+}
+
+.lightPage p {
+    margin-top:20px;
+}
+
+.lightPage h2 {
+    margin-top:40px;
+}
+.jumbotron {
+    text-align: center;
+}
+
+.jumbotron img {
+    width:100%;
+    max-width: 700px;
+}
+
+
+h1 {
+    font-family: 'Robo', Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight: bold;
+}
+
+body {
+    padding-bottom:80px;
+}
