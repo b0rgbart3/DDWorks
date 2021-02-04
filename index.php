@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dority Design Works</title>
-        <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,500,900" rel="stylesheet">
+
+        <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:200,300,400,500,600,700,800" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
@@ -15,15 +16,20 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,500,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700" rel="stylesheet">
+
+        <!-- My Style Sheets -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/masthead.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/design.css">
         <link rel="stylesheet" href="css/contact_style.css">
+
+        <!-- Form Handler PHP script -->
         <?php INCLUDE 'contact_process.php';?>
     </head>
 
 <body>
+    <!-- Masthead -->
     <div class='mastContainer group'>
         <div class='mast group'>
             <div class='logo group'>
@@ -50,7 +56,9 @@
         </div>
     </div>
 
+    <!-- PHP script to post a thank you message when the contact form is filled out. -->
     <?php INCLUDE 'contact_thank_you.php'; ?>
+
     <div class='innercontent group'>
        <div class='projects group' id='collection'>
             <img src='images/interface/loading.gif'>
@@ -72,8 +80,8 @@
 
     <br clear='all'>
 
+    <!-- The Contact Form -->
     <a name='contact'></a>
-
     <form id="contactForm" class='contactForm' method='post' action="index.php" enctype="multipart/form-data">
         <h1>Contact Dority Design Works:</h1>  
         <br>
@@ -97,6 +105,7 @@
 
 </body>
 
+<!-- Javascript Includes -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src='js/external/jquery.visible.min.js'></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
