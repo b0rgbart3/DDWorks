@@ -9,35 +9,17 @@ define(['jquery', 'pubsub', 'TweenLite', 'TimelineLite'], function($, pubsub, Tw
     var logos=['womb_logo', 'gede_logo','mjp','wk','vargatorte', 'suzanne_logotype' ];
     var apps=['loom', 'starburst', ];
     var animation=['cousteau', 'newline'];
-    var businesscards=['willow_card','dave_card'];
     var contact=['contact'];
-    var category = 0;
     var list = null;
-    var currentlist = null;
     var projectDiv;
-    var tipTimer;
-    var infoOpen = false;
     var sequences = [];
     var currentProject = 0;
-    var slim = false;
     var currentlyLoading = false;
-    var slimming;
-    var slim2;
     var longcategoryNames = ['Home', 'Current Projects','Web Design & Development','Websites built using the WordPress&reg; Platform','application development','graphic design & promotional materials', 'logo design & visual branding', 'animation & special effects', 'Contact Dority Design Works'];
 
     var lists= [home,latest,websites,wordpress, apps,design,logos, animation, contact];
-    var chosenCategory = 0;
-
     
     var categories = ['home', 'current','webdesign', 'wordpress', 'apps','graphics','logos','animation', 'contact'];
-
-    $.get('intro1.html', function( data ) {
-                    
-        $('#intro').empty();
-        $('#intro').append( data );
-        ddw_intro();
-    });
-
 
 
     function goNext(elements) {

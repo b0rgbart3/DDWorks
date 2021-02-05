@@ -630,7 +630,8 @@ color:#ffffff;
   clear: both; }
 
 .group {
-  zoom: 1;
+    transform:scale(1.0);
+    transform-origin: 0 0;
   /* IE6&7 */ }
 
 	

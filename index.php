@@ -36,23 +36,25 @@
                 <img src='images/interface/logo.svg' class='ddwLogo'>
             </div>
 
-            <div class='burger group'>
+            <div class='burger group' id='burger'>
                 <div class='burgerIcon'></div>
             </div>
         </div>
 
         <div class='title-tag main-title-tag'></div> 
-        <div class='burgerNav group noselect'>
-            <ul class='navChoices group noselect'>
-                <li class='nav-choice' data-number='4' data-shortname='apps'>application development</li>
-                <li class='nav-choice' data-number='2' data-shortname='webdesign'>web design &amp; development</li>
-                <li class='nav-choice' data-number='3' data-shortname='wordpress'>wordpress websites</li>
-                <li class='nav-choice' data-number='5' data-shortname='graphics'>graphic design</li>
-                <li class='nav-choice' data-number='6' data-shortname='logos'>logo design</li>
-                <li class='nav-choice' data-number='7' data-shortname='animation'>animation</li>
-                <li class='nav-choice' data-number='8' data-shortname='contact'>contact</li>
-                <li class='nav-choice' data-number='-1' data-shortname='home'>home</li>
-            </ul>
+    </div>
+    <div class='navContainer'>
+        <div class='burgerNav group noselect' id='navMenu'>
+                <ul class='navChoices group noselect'>
+                    <li class='nav-choice' data-number='4' data-shortname='apps'>application development</li>
+                    <li class='nav-choice' data-number='2' data-shortname='webdesign'>web design &amp; development</li>
+                    <li class='nav-choice' data-number='3' data-shortname='wordpress'>wordpress websites</li>
+                    <li class='nav-choice' data-number='5' data-shortname='graphics'>graphic design</li>
+                    <li class='nav-choice' data-number='6' data-shortname='logos'>logo design</li>
+                    <!-- <li class='nav-choice' data-number='7' data-shortname='animation'>animation</li> -->
+                    <li class='nav-choice' data-number='8' data-shortname='contact'>contact</li>
+                    <li class='nav-choice' data-number='-1' data-shortname='home'>home</li>
+                </ul>
         </div>
     </div>
 
@@ -114,10 +116,9 @@
 <script src='js/TimelineMax.js'></script>
 <script src='js/TweenMax.js'></script>
 <!-- Using Require JS to load in multiple JS modules -->
+<!-- This is the main js file that loads in most of our Javascript code -->
 <script src='js/external/require.js' data-main='js/base'></script>
-<script src='js/intro1.js'></script>
 <script src='js/form_validation.js'></script>
-
 </html>
 
 <?php

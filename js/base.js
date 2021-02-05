@@ -1,16 +1,16 @@
 "use strict";
 
+require(['jquery','pubsub', 'menu', 'page'], 
+  function($, pubsub, menu, page) {
 
-require(['jquery','pubsub', 'menu', 'page', 'iC', 'TweenLite', 'TimelineLite'], function($, pubsub, menu, page, iC, TweenLite, TimelineLite) {
-
-    // our only dom ready event
+    // our main dom ready event
     $(document).ready(function() { 
-        var query = null;
+        let query = null;
         
-
         if (window['query'] && window['query'] != null) {
             query = window['query'];
         }
+
         // bootstrap the project list
        menu.init();
        
@@ -24,11 +24,11 @@ require(['jquery','pubsub', 'menu', 'page', 'iC', 'TweenLite', 'TimelineLite'], 
        
 
        var isInViewport = function(element) {
-        var elementTop = $(element).offset().top;
-        var elementBottom = elementTop + $(element).outerHeight();
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-        return elementBottom > viewportTop && elementTop < ( viewportBottom - 250);
+            var elementTop = $(element).offset().top;
+            var elementBottom = elementTop + $(element).outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+            return elementBottom > viewportTop && elementTop < ( viewportBottom - 250);
         };
 
         if (query) {

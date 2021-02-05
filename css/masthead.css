@@ -1,21 +1,23 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+  }
 
+  
 .mastContainer {
     box-sizing: border-box;
     width:100%;
     max-width:1200px;
-    /* min-width:550px; */
     box-sizing: border-box;
     margin:0;
-    background-color:rgb(218, 218, 218);
     border-radius:0 0 8px 8px;
     margin-bottom:0px;
     box-shadow:0 0 14px rgba(0,0,0,.45);
     padding-bottom:0;
     overflow: hidden;
- 
     margin-left:auto;
     margin-right:auto;
-   
+    position:relative;
 }
 .mast {
     padding:0;
@@ -27,6 +29,7 @@
     box-sizing: border-box;
     border-bottom:2px solid #bbbbbb;
     overflow: hidden;
+    background-color:#cccccc;
 }
 
 .logo {
@@ -39,32 +42,21 @@
     cursor: pointer;
     padding-top:0px;
     overflow: hidden;
-    /* height:200px; */
     width:70%;
     height:190px;
-    /* border: 1px solid red; */
     float:left;
     padding-top:0px;
-    /* width:calc(100% - 200px); */
 }
 
 .logo:hover {
-    background-color:#5fff2f;
-    background-color:#008deb;
+    background-color:var(--blue);
 }
 
 .logo img {
-    /* max-height:190px; */
     height:96%;
     max-width:100%;
-    /* border:1px solid blue; */
     margin-left:1%;
-
 }
-/* .ddwLogo {
-   width:90%;
-   margin-left:4%;
-} */
 
 .baseNav {
     display:inline-block;
@@ -88,23 +80,21 @@
     cursor: pointer;
     padding-top:10px;
     padding-bottom:10px;
-    border-radius:4px;
-    
+    border-radius:4px;  
 }
 
 .baseNav ul li:hover {
     background-color:#5fff2f;
-    background-color:#008deb;
+    background-color:var(--blue);
 }
 .secondTier {
     height:100px;
     background-color:#cccccc;
-
 }
 
 .burger {
     display:inline-block;
-    vertical-align: top
+    vertical-align: top;
     box-sizing:border-box;
     margin-top:0;
     vertical-align: top;
@@ -116,19 +106,18 @@
     overflow: hidden;
     opacity:.8;
     width:30%;
-    /* border:1px solid orange; */
     height:190px;
 }
 
 .burger:hover {
     background-color:#5fff2f;
-    background-color:#008deb;
+    background-color:var(--blue);
     opacity:1;
 }
 
 .burgerOpen {
     background-color:#5fff2f;
-    background-color:#008deb;
+    background-color:var(--blue);
 }
 .burgerIcon {
     background-image:url(../images/interface/burger_black.svg);
@@ -140,33 +129,20 @@
     border-radius:8px;
     margin-left:auto;
     margin-right:auto;
-    margin-top:30px;
-    /* border:1px solid blue; */
-    /* background-color:rgba(255,255,255,.5); */
-   
+    margin-top:30px;   
 }
-.burgerNavWrapper {
+
+.navContainer {
     width:100%;
     max-width:1200px;
-    margin-left:auto;
-    margin-right:auto;
+    margin:auto;
 }
 .burgerNav {
-    margin:0;
-    /* top:100px;
-    position: fixed; */
-    z-index: 600;
     user-select: none;
-    cursor: default;
-    right:0;
+    cursor: pointer;
     position: relative;
-    top:0;
-
-
-}
-
-.burgerNav:hover {
-
+    top:10px;
+    margin-bottom:20px;
 }
 
 .navChoices {
@@ -182,7 +158,6 @@
     color:#999999;
     border-radius:8px;
     border:2px solid #999999;
-    
 }
 
 li.nav-section {
@@ -205,24 +180,21 @@ li.nav-section {
     cursor:pointer;
 }
 
-
 .navChoices li.nav-choice:first-child {
     padding-top:22px;
 }
 .navChoices li.nav-choice:hover {
     background-color:#5fff2f;
-    background-color:#008deb;
+    background-color:var(--blue);
     color:black;
 }
 .navChoices li.nav-choice:focus {
     background-color:#5fff2f;
-    background-color:#008deb;
+    background-color:var(--blue);
 }
 .navChoices li.nav-choice:active {
     background-color:#5fff2f;
-    background-color:#008deb;
-
-
+    background-color:var(--blue);
 }
 
 .noSelect {
@@ -250,56 +222,27 @@ li.nav-section {
 }
 
 @media screen and (min-width:800px) {
-    .burgerNav {
-        /* border:8px solid blue; */
-        top:180px;
-        position: fixed;
-        right:1%;
-    } 
 
-    /* .ddwLogo {
-        width:220px;
-        position: relative;
-        top:-10px;
-        left:4px;
-    }
-    
-*/
     .logo {
-
         width:80%;
-        /* height:80px;
-        width:calc(100% - 200px); */
     } 
 
     .burger {
         width:20%;
-        /* width:150px;
-        height:100px;
-        padding-top:14px; */
     }
 
-    .burgerIcon {
-        /* background-image:url(../images/interface/burger_black.svg);
-        background-size:40px 40px;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        width:100px;
-        height:80px;
-        border-radius:8px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:0px; */
-        /* background-color:rgba(255,255,255,.5); */
-       
+    .burgerNav {
+        max-width:440px;
+        z-index: 200;
+        height:0;
+        float:right;
+        top:0;
     }
+
+
 }
 @media screen and (min-width:1600px) {
 
-    .burgerNav {
-        right:15%;
-      
-    }
 
     .burgerIcon {
         margin-top:10px;
