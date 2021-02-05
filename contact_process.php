@@ -1,7 +1,6 @@
 <?php
 
-$firstname = '';
-$lastname = '';
+$fullname = '';
 $email = '';
 $message = '';
 $error = '';
@@ -10,6 +9,9 @@ $datareceived = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     if (isset($_POST['submit']))
     {
+     //   print_r($_POST);
+      //  echo "Thank you for you for contacting us.";
+       // echo "<br>";
 
         if (isset($_POST['message'])) {
             $message = trim($_POST['message']);
@@ -39,15 +41,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $errorfield = "email";
           }
           if (isset($_POST['fullname'])) {
-            $lastname = trim($_POST['fullname']);
-            if ($lastname=='') {
-                $error = "your fullname";
+            $fullname = trim($_POST['fullname']);
+            if ($fullname=='') {
+                $error = "your name";
                 $errorfield = "fullname";
             }
-          } 
+          } else {
+              $error = "your full name";
+              $errorfield = "fullname";
+          }
+
   
 
             if ($error == '') {
+                //echo "<br>No errors.";
                 $datareceived = true;
 
                 $data = [];
@@ -74,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-function sendContactMessage( $data) {
+ function sendContactMessage( $data) {
 
     $to = "bartdority@gmail.com";
     $subject = "A message was received from the DDWorks website";
@@ -83,10 +90,8 @@ function sendContactMessage( $data) {
     <html>
     <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel="stylesheet">
-    </head>
-    <body style="font-size:16px; font-family:sans-serif; color:#000000">
-    
-    EOD;
+    </head><body style="font-size:16px; font-family:sans-serif; color:#000000">
+EOD;
     
     $message .= "<div style='color:#000000;padding:10px;border:1px solid #eeeeee;'>";
     $message .=  "<h1>A Message from the Contact Form of DDWorks</h1>";
@@ -107,5 +112,4 @@ function sendContactMessage( $data) {
     
     mail($to,$subject,$message,$headers);
     
-    }
-    
+}

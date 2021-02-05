@@ -1,3 +1,6 @@
+<?php 
+
+?>
 <!doctype html>
 <html>
     <head>
@@ -24,11 +27,13 @@
         <link rel="stylesheet" href="css/design.css">
         <link rel="stylesheet" href="css/contact_style.css">
 
-        <!-- Form Handler PHP script -->
-        <?php INCLUDE 'contact_process.php';?>
     </head>
 
 <body>
+<?php            
+  include 'contact_process.php';
+        //    Form Handler PHP script 
+?>
     <!-- Masthead -->
     <div class='mastContainer group'>
         <div class='mast group'>
@@ -59,7 +64,13 @@
     </div>
 
     <!-- PHP script to post a thank you message when the contact form is filled out. -->
-    <?php INCLUDE 'contact_thank_you.php'; ?>
+    <?php
+      //include 'contact_thank_you.php'; 
+      if ($datareceived) {
+        echo "<div class='response'><p>Thank you for contacting us. <br>We will be in touch shortly.<br></div>";
+        $datareceived = false;
+    }    
+     ?>
 
     <div class='innercontent group'>
        <div class='projects group' id='collection'>
@@ -115,14 +126,11 @@
 <script src='js/TimelineLite.js'></script>
 <script src='js/TimelineMax.js'></script>
 <script src='js/TweenMax.js'></script>
+
 <!-- Using Require JS to load in multiple JS modules -->
 <!-- This is the main js file that loads in most of our Javascript code -->
+
 <script src='js/external/require.js' data-main='js/base'></script>
 <script src='js/form_validation.js'></script>
 </html>
 
-<?php
-  
-
-
-?>

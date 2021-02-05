@@ -1,5 +1,5 @@
 input[type='text'].error {
-    border:2px solid #5fff2f;
+    border:2px solid #1e90ff;
 }
 
 .response {
@@ -54,15 +54,15 @@ input[type='text'].error {
         border:none;
     }
     input[type='submit']:hover {
-        background-color:#5fff2f;
+        background-color:#1e90ff;
         color:black;
         outline:none;
         border:none;
     }
     input[type='submit']:active {
-        background-color:#5fff2f;
+        background-color:#1e90ff;
         color:black;
-        border-color:#5fff2f;
+        border-color:#1e90ff;
         top:2px;
         left:2px;
         outline:none;
@@ -89,11 +89,11 @@ input[type='text'].error {
         text-transform:capitalize;
     }
     input[type='text']:active, input[type='text']:focus  {
-        outline-color:#5fff2f;
+        outline-color:#1e90ff;
         background-color:white;
     }
     textarea.error {
-        border:2px solid #5fff2f;
+        border:2px solid #1e90ff;
     }
     textarea {
         width:90%;
@@ -110,7 +110,7 @@ input[type='text'].error {
 
     }
     textarea:active, textarea:focus {
-        outline-color:#5fff2f;
+        outline-color:#1e90ff;
         background-color:white;
     }
     label {
