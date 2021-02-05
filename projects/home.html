@@ -1,96 +1,46 @@
-<style>
-    .hotBox {
-        padding:0;
-        margin:0;
-        box-sizing: border-box;
-    }
-  .hotBoxTitle {
-      background-color:#008deb;
-      position: absolute;
-      top:0;
-      left:0;
-      z-index: 200;
-      padding:30px;
-      font-size:2em;
-      font-weight: 500;
-      letter-spacing: -.015em;
-      box-sizing: border-box;
-      text-transform: uppercase;
-      box-shadow:0px 2px 8px rgba(0,0,0,.3);
-  }
-
-  @media screen and (max-width:640px), only screen and (max-device-width: 640px)
-
-  /* @media only screen and (max-device-width: 640px)  */
-{
-    .hotBoxTitle {
-        box-sizing: border-box;
-        display:inline-block;
-        position: relative;
-        background-color:white;
-      z-index: 200;
-      padding:10px;
-      font-size:1.8em;
-      letter-spacing: -.035em;
-      margin:0;
-      width:100%;
-  }
-
- }
-
-</style>
-<!-- <div class='buttonContainer group'>
-<div class='bigButton graphics' data-number='5' data-shortname='graphics'>Graphics</div>
-&nbsp;+&nbsp;<div class='bigButton code'>Code</div>
-</div> -->
-<!-- <div class='projectImage'> -->
-    <br>
-    <div class='projectContainer'>
-        
-<div class='fullImageContainer imageContainer art homeSlider' id='ml_art'>
-    <div class='hotBox hotBoxCode slideMe active'>
-        <div class='hotBoxTitle'>App Development</div>
-        <img src='./projects/images/application_development.jpg'></div>
-   
-    <div class='hotBox hotBoxWeb slideMe passive'>
-        <div class='hotBoxTitle'>Web Design & Development</div>
-    <img src='./projects/images/webdesign.jpg'></div>
-
-    <div class='hotBox hotBoxPrint slideMe passive'>
-        <div class='hotBoxTitle'>Graphic Design</div>
-    <img src='./projects/images/gray_paperback_book.jpg'></div>
 
 
-   
-</div>
+<div class='projectContainer'>    
+    <div class='fullImageContainer imageContainer art homeSlider' id='ml_art'>
+        <div class='hotBox hotBoxCode slideMe active'>
+            <img src='./projects/images/application_development.jpg'>
+            <div class='hotBoxTitle'>App Development</div>
+        </div>
+        <div class='hotBox hotBoxWeb slideMe passive'>
+            <img src='./projects/images/webdesign.jpg'>
+            <div class='hotBoxTitle'>Web Design & Development</div>
+        </div>
+        <div class='hotBox hotBoxPrint slideMe passive'> 
+            <img src='./projects/images/gray_paperback_book.jpg'>
+            <div class='hotBoxTitle'>Graphic Design</div>
+        </div>
+    </div>
 </div>
 
-    <div class='arrowNav homepageArrow next'></div>
 
-</div>
+<div class='arrowNav homepageArrow next'></div>
+
   
 <script>
 
-let Code = $('.hotBoxCode');
-    Code.on('click', function() {
-            window.location='index.php?section=apps';
-        });
-let gotoWeb = $('.hotBoxWeb');
-    gotoWeb.on('click', function() {
-    window.location='index.php?section=webdesign';
-        });
+    let Code = $('.hotBoxCode');
+        Code.on('click', function() {
+                window.location='index.php?section=apps';
+            });
+    let gotoWeb = $('.hotBoxWeb');
+        gotoWeb.on('click', function() {
+        window.location='index.php?section=webdesign';
+            });
 
-let Graphics = $('.graphics');
-    Graphics.on('click', function() {
-            window.location='index.php?section=graphics';
-        });
+    let Graphics = $('.graphics');
+        Graphics.on('click', function() {
+                window.location='index.php?section=graphics';
+            });
 
-
-
-let gotoPrint = $('.hotBoxPrint');
-    gotoPrint.on('click', function() {
-    window.location='index.php?section=graphics';
-        });
+    let gotoPrint = $('.hotBoxPrint');
+        gotoPrint.on('click', function() {
+        window.location='index.php?section=graphics';
+            });
         
-        </script>
+</script>
     
