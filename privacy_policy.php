@@ -21,7 +21,7 @@
         <div class='mastContainer group'>
                 <div class='mast group'>
                     <div class='logo group'>
-                        <img src='images/interface/logo.svg' class='ddwLogo'>
+                        <img src='images/interface/ddw_logo.svg' class='ddwLogo'>
                     </div>
             </div>
         </div></a>

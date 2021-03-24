@@ -4,7 +4,6 @@
     box-sizing: border-box;
     width:100%;
     max-width:1200px;
-    box-sizing: border-box;
     margin:0;
     border-radius:0 0 8px 8px;
     margin-bottom:0px;
@@ -14,17 +13,8 @@
     margin-left:auto;
     margin-right:auto;
     position:relative;
-}
-.mast {
-    padding:0;
-    margin:0;
-    position: relative;
-    top:0px;
-    margin-left:auto;
-    margin-right:auto;
-    box-sizing: border-box;
-    border-bottom:2px solid #bbbbbb;
-    overflow: hidden;
+    display:grid;
+    grid-template-columns: auto 140px;
     background-color:#cccccc;
 }
 
@@ -33,15 +23,13 @@
     padding:0;
     vertical-align: top;
     display:inline-block;
-    float:left;
     box-sizing:border-box;
     cursor: pointer;
     padding-top:0px;
     overflow: hidden;
-    width:70%;
     height:190px;
-    float:left;
     padding-top:0px;
+   
 }
 
 .logo:hover {
@@ -101,8 +89,10 @@
     padding-bottom:16px;
     overflow: hidden;
     opacity:.8;
-    width:30%;
     height:190px;
+    width:100%;
+  
+
 }
 
 .burger:hover {
@@ -219,13 +209,7 @@ li.nav-section {
 
 @media screen and (min-width:800px) {
 
-    .logo {
-        width:80%;
-    } 
 
-    .burger {
-        width:20%;
-    }
 
     .burgerNav {
         max-width:440px;
@@ -240,20 +224,6 @@ li.nav-section {
 @media screen and (min-width:1600px) {
 
 
-    .burgerIcon {
-        margin-top:10px;
-    }
-    .logo {
-
-        width:85%;
-        height:150px;
-
-    } 
-
-    .burger {
-        width:15%;
-        height:150px;
-    }
 
 
 }

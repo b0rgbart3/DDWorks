@@ -155,16 +155,16 @@ function sendContactMessage( $data) {
         //    Form Handler PHP script 
 ?>
     <!-- Masthead -->
-    <div class='mastContainer group'>
-        <div class='mast group'>
-            <div class='logo group'>
-                <img src='images/interface/logo.svg' class='ddwLogo'>
+    <div class='mastContainer'>
+    
+            <div class='logo'>
+                <img src='images/interface/ddw_logo.svg' class='ddwLogo'>
             </div>
 
-            <div class='burger group' id='burger'>
+            <div class='burger' id='burger'>
                 <div class='burgerIcon'></div>
             </div>
-        </div>
+     
 
         <div class='title-tag main-title-tag'></div> 
     </div>

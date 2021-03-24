@@ -53,7 +53,7 @@ define(['jquery', 'pubsub'], function($, pubsub) {
             logo.mouseout(function(event) {
                 let target = $(event.target);
                 if (target.is('img')) {
-                    event.target.src = "images/interface/logo.svg";
+                    event.target.src = "images/interface/ddw_logo.svg";
                 }
                 
             });
