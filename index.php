@@ -122,7 +122,7 @@ function sendContactMessage( $data) {
     </head>
     <body style="font-size:16px; font-family:sans-serif; color:#000000">
     
-    EOD;
+EOD;
     
     $message .= "<div style='color:#000000;padding:10px;border:1px solid #eeeeee;'>";
     $message .=  "<h1>A Message from the Contact Form of DDWorks</h1>";
